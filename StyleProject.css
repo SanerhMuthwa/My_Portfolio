@@ -1,0 +1,160 @@
+h1{
+    font-size: 100px;
+    text-align: center;
+}
+body{
+    background-color: #d4d6d9;
+}
+img {
+    width: 100px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: #fff;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.navbar {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    float: left;
+}
+
+    .logo img {
+        height: 80px;
+        width: 105px;
+        margin-right: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+    .nav-links li {
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+/*Hover effect on nav-links*/
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-links a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover::before {
+            transform: scaleX(1);
+        }
+
+        /*Hover effect on Image*/
+.logo:hover img {
+    transform: rotate(360deg);
+}
+
+.socials{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.socials a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/*Hover effect on Social Media Icons*/
+.socials :hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socials :hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:700px){
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100px;
+        text-align: center;
+        margin: 10px;
+    }
+}
